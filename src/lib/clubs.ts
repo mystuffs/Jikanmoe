@@ -1,4 +1,10 @@
-import { IClubMembers, IClubRelations, IClubsById, IClubsSearch, IClubStaff } from "../typings/clubs";
+import type {
+    IClubMembers,
+    IClubRelations,
+    IClubsById,
+    IClubsSearch,
+    IClubStaff,
+} from "../typings/clubs";
 import fetchURL from "./util";
 
 export default class Clubs {
