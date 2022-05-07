@@ -1,3 +1,4 @@
+import fetchURL from "./util";
 import type {
     IMangaById,
     IMangaCharacters,
@@ -13,11 +14,7 @@ import type {
     IMangaTopics,
     IMangaUserUpdates,
 } from "../typings/manga";
-import fetchURL from "./util";
 
-/**
- * @todo continue from https://docs.api.jikan.moe/#operation/getMangaTopics
- */
 export default class Manga {
     public async getMangaById(id: number): Promise<IMangaById> {
         const data = await fetchURL<IMangaById>(`/manga/${id}`);
