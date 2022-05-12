@@ -102,4 +102,5 @@ dist
 
 dist/
 package-lock.json
+yarn.lock
 test.js
