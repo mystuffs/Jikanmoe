@@ -1,5 +1,11 @@
-import { IRandomAnime, IRandomChatacters, IRandomManga, IRandomPeople, IRandomUsers } from "../typings/random";
 import fetchURL from "./util";
+import type {
+    IRandomAnime,
+    IRandomChatacters,
+    IRandomManga,
+    IRandomPeople,
+    IRandomUsers,
+} from "../typings/random";
 
 export default class Random {
     public async getRandomAnime(): Promise<IRandomAnime> {
