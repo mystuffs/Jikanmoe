@@ -103,7 +103,7 @@ export interface IUserFavorites {
           title: string,
         }[],
         characters: {
-             : {
+            "" : {
                 mal_id: number,
                 type: string,
                 title: string,
@@ -124,7 +124,7 @@ export interface IUserFavorites {
           name: string
       }[],
       people: {
-           : {
+          "" : {
               mal_id: number,
               url: string,
               images: {
