@@ -1,4 +1,9 @@
-import { IWatchPopularEpisodes, IWatchPopularPromos, IWatchRecentEpisodes, IWatchRecentPromos } from "../typings/watch";
+import type {
+    IWatchPopularEpisodes,
+    IWatchPopularPromos,
+    IWatchRecentEpisodes,
+    IWatchRecentPromos,
+} from "../typings/watch";
 import fetchURL from "./util";
 
 export default class Watch {
