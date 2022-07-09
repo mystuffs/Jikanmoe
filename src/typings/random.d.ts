@@ -1,261 +1,261 @@
 export interface IRandomAnime {
     data: {
-        mal_id: number,
-        url: string,
+        mal_id: number;
+        url: string;
         images: {
             jpg: {
-                image_url: string,
-                small_image_url: string,
-                large_image_url: string,
+                image_url: string;
+                small_image_url: string;
+                large_image_url: string;
             },
             webp: {
-                image_url: string,
-                small_image_url: string,
-                large_image_url: string,
+                image_url: string;
+                small_image_url: string;
+                large_image_url: string;
             },
         },
         trailer: {
-            youtube_id: string,
-            url: string,
-            embed_url: string,
+            youtube_id: string;
+            url: string;
+            embed_url: string;
         },
-        title: string,
-        title_english: string,
-        title_japanese: string,
-        title_synonyms: string[],
-        type: string,
-        source: string,
-        episodes: number,
-        status: string,
-        airing: boolean,
+        title: string;
+        title_english: string;
+        title_japanese: string;
+        title_synonyms: string[];
+        type: string;
+        source: string;
+        episodes: number;
+        status: string;
+        airing: boolean;
         aired: {
-            from: string,
-            to: string,
+            from: string;
+            to: string;
             prop: {
                 from: {
-                    day: number,
-                    month: number,
-                    year: number,
+                    day: number;
+                    month: number;
+                    year: number;
                 },
                 to: {
-                    day: number,
-                    month: number,
-                    year: number,
+                    day: number;
+                    month: number;
+                    year: number;
                 },
-                string: string,
+                string: string;
             },
         },
-        duration: string,
-        rating: string,
-        score: number,
-        scored_by: number,
-        rank: number,
-        popularity: number,
-        members: number,
-        favorites: number,
-        synopsis: string,
-        background: string,
-        season: string,
-        year: number,
+        duration: string;
+        rating: string;
+        score: number;
+        scored_by: number;
+        rank: number;
+        popularity: number;
+        members: number;
+        favorites: number;
+        synopsis: string;
+        background: string;
+        season: string;
+        year: number;
         broadcast: {
-            day: string,
-            time: string,
-            timezone: string,
-            string: string,
+            day: string;
+            time: string;
+            timezone: string;
+            string: string;
         },
         producers: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         licensors: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         studios: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         genres: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         explicit_genres: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         themes: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         demographics: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
     }
 }
 
 export interface IRandomManga {
     data: {
-        mal_id: number,
-        url: string,
+        mal_id: number;
+        url: string;
         images: {
             jpg: {
-                image_url: string,
-                small_image_url: string,
-                large_image_url: string,
+                image_url: string;
+                small_image_url: string;
+                large_image_url: string;
             },
             webp: {
-               image_url: string,
-               small_image_url: string,
-               large_image_url: string,
+               image_url: string;
+               small_image_url: string;
+               large_image_url: string;
             },
       },
-      title: string,
-      title_english: string,
-      title_japanese: string,
-      title_synonyms: string[],
-      type: string,
-      chapters: number,
-      volumes: number,
-      status: string,
-      publishing: boolean,
+      title: string;
+      title_english: string;
+      title_japanese: string;
+      title_synonyms: string[];
+      type: string;
+      chapters: number;
+      volumes: number;
+      status: string;
+      publishing: boolean;
       published: {
-          from: string,
-            to: string,
+          from: string;
+            to: string;
             prop: {
                 from: {
-                    day: number,
-                    month: number,
-                    year: number,
+                    day: number;
+                    month: number;
+                    year: number;
                 },
                 to: {
-                    day: number,
-                    month: number,
-                    year: number,
+                    day: number;
+                    month: number;
+                    year: number;
                 },
-                string: string,
+                string: string;
             },
         },
-        score: number,
-        scored_by: number,
-        rank: number,
-        popularity: number,
-        members: number,
-        favorites: number,
-        synopsis: string,
-        background: string,
+        score: number;
+        scored_by: number;
+        rank: number;
+        popularity: number;
+        members: number;
+        favorites: number;
+        synopsis: string;
+        background: string;
         authors: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         serializations: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         genres: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         explicit_genres: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         themes: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
         demographics: {
-            mal_id: number,
-            type: string,
-            name: string,
-            url: string,
+            mal_id: number;
+            type: string;
+            name: string;
+            url: string;
         }[],
     }
 }
 
 export interface IRandomChatacters {
     data: {
-        mal_id: number,
-        url: string,
+        mal_id: number;
+        url: string;
         images: {
             jpg: {
-                image_url: string,
-                small_image_url: string,
+                image_url: string;
+                small_image_url: string;
             },
             webp: {
-                image_url: string,
-                small_image_url: string,
+                image_url: string;
+                small_image_url: string;
             },
         },
-        name: string,
-        name_kanji: string,
-        nicknames: string[],
-        favorites: number,
-        about: string,
+        name: string;
+        name_kanji: string;
+        nicknames: string[];
+        favorites: number;
+        about: string;
     }
 }
 
 export interface IRandomPeople {
     data: {
-        mal_id: number,
-        url: string,
-        website_url: string,
+        mal_id: number;
+        url: string;
+        website_url: string;
         images: {
             jpg: {
-                image_url: string,
+                image_url: string;
             },
         },
-        name: string,
-        given_name: string,
-        family_name: string,
-        alternate_names: string[],
-        birthday: string,
-        favorites: number,
-        about: string,
+        name: string;
+        given_name: string;
+        family_name: string;
+        alternate_names: string[];
+        birthday: string;
+        favorites: number;
+        about: string;
     }
 }
 
 export interface IRandomUsers {
     data: {
-        mal_id: number,
-        username: string,
-        url: string,
+        mal_id: number;
+        username: string;
+        url: string;
         images: {
             jpg: {
-                image_url: string,
+                image_url: string;
             },
             webp: {
-                image_url: string,
+                image_url: string;
             },
         },
-        last_online: string,
-        gender: string,
-        birthday: string,
-        location: string,
-        joined: string,
+        last_online: string;
+        gender: string;
+        birthday: string;
+        location: string;
+        joined: string;
     }
 }
